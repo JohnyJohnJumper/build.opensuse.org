@@ -15,6 +15,8 @@ services:
     - "127.0.0.1:9980:9980"
     restart: always
     container_name: collabora-key
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true"
     # set the ip-address of your docker host AND your official DNS name so Collabora
     # can access EGroupware without the need to go over your firewall
     #extra_hosts:
